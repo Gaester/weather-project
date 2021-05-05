@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="/img/weather.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Weather</title>
 </head>
 <body>
     {{>header}}
     <div class="container">
-        <h1>{{title}}</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci expedita provident aspernatur atque eaque, tempore saepe rerum mollitia quo eius.</p>
-
+        <h1 id="header1">{{title}}</h1>
+        <h2 class="header2">Get Your Weather Data.</h2>
+        <h2 class="header2">Start Now!</h2>
         <form>
             <input placeholder="Enter a location..." required>
             <button>Search</button>
@@ -22,9 +24,12 @@
         <p id="message1"></p>
         <div id="forecastBox">
             <img>
-            <p id="location"></p>
-            <p id="temperature"></p>
-            <p id="localtime"></p>
+            <p id="location"></p><br>
+            <p id="description"></p><br>
+            <p id="temperature"></p><br>
+            <p id="feelslike"></p><br>
+            <p id="humidity"></p><br>
+            <p id="localtime"></p><br>
             <p id="observation_time"></p>
         </div>
     </div>

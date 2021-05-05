@@ -13,11 +13,14 @@ const forecast = (lat,lon, callback) =>{
          }
          else {
              callback(undefined, {
+                 description: body.current.weather_descriptions[0],
                  location: body.location.region,
                  localtime: body.location.localtime,
                  observation_time: body.current.observation_time,
                  temperature: body.current.temperature,
-                 icon_url: body.current.weather_icons[0]
+                 icon_url: body.current.weather_icons[0],
+                 humidity: body.current.humidity,
+                 feelslike:body.current.feelslike
              })
          }
      })
