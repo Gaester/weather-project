@@ -21,14 +21,14 @@ app.use(express.static(PublicDirectory));
 app.get('', (req,res)=>{
     res.render('index', {
         title: 'Weather App',
-        name: 'Melih Selvi'
+        name: 'gaester'
     });
 })
 
 app.get('/about', (req,res)=>{
     res.render('about', {
         title: 'About Me',
-        name:'Melih Selvi'
+        name:'gaester'
     });
 })
 
@@ -36,7 +36,7 @@ app.get('/help', (req,res)=>{
     res.render('help', {
         title:'Help',
         message: 'if you need help, you can message me through discord.',
-        name:'Melih Selvi'
+        name:'gaester'
     })
 })
 
@@ -91,7 +91,7 @@ app.get('/products', (req,res)=>{
 app.get('/help/*', (req,res)=>{
     res.render('error',{
         message:'Help article not found.',
-        name:'Melih Selvi',
+        name:'gaester',
         title:'Error 404: Not Found'
     })
 })
@@ -99,7 +99,7 @@ app.get('/help/*', (req,res)=>{
 app.get('*', (req,res)=>{
     res.render('error',{
         message:'Page not found.',
-        name:'Melih Selvi',
+        name:'gaester',
         title:'Error 404: Not Found'
     })
 })
