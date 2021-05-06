@@ -32,10 +32,11 @@ header a{
     margin-right: 20px;
     margin-top: 25px;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
-    width: 768px;
+    width: 1120px;
     flex-grow: 1;
     margin: 0 auto;
     padding: 30px;
@@ -91,6 +92,10 @@ form button:hover{
     background-color: rgb(224, 224, 224);
     padding: 10px;
     border-radius: 5px;
+    background-image: url('../img/sky.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 #header1{
@@ -104,4 +109,18 @@ form button:hover{
 .header2{
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
+}
+.td-th{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+#forecast-header{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(214, 214, 214);
+    margin-top: 10px;
+}
+td{
+    padding-bottom:40px;
+    font-size: 20px;
 }

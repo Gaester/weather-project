@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="/img/weather.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Weather</title>
 </head>
 <body>
@@ -23,14 +23,42 @@
 
         <p id="message1"></p>
         <div id="forecastBox">
-            <img>
-            <p id="location"></p><br>
-            <p id="description"></p><br>
-            <p id="temperature"></p><br>
-            <p id="feelslike"></p><br>
-            <p id="humidity"></p><br>
-            <p id="localtime"></p><br>
-            <p id="observation_time"></p>
+            
+            <h2 id="forecast-header"></h2><br><br>
+            <table style="width: 100%; text-align:center;">
+                <tr>
+                    <th class="td-th">STATUS</th>
+                    <th class="td-th">TEMPERATURE</th>
+                    <th class="td-th">LOCATION</th>
+                </tr>
+                
+                <tr>
+                    <td><img><p id="description">Sunny</p></td>
+                    <td><img><p id="temperature">14</p></td>
+                    <td><img><p id="location">Istanbul</p></td>
+                </tr>
+
+                <tr style="margin-top: 20px;">
+                    <th class="td-th">HUMIDITY</th>
+                    <th class="td-th">FEELS LIKE</th>
+                    <th class="td-th">LOCAL TIME</th>
+                </tr>
+
+                <tr>
+                    <td><img><p id="humidity">45</p></td>
+                    <td><img><p id="feelslike">13</p></td>
+                    <td><img><p id="localtime">19:46</p></td>
+                </tr>
+                
+                <tr>
+                    <th class="td-th">OBSERVATION TIME</th>
+                </tr>
+
+                <tr>
+                    <td><p id="observation_time">19:45</p></td>
+                </tr>
+            </table>
+            
         </div>
     </div>
     
